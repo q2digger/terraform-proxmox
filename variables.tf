@@ -13,3 +13,8 @@ variable "pm_api_token_secret" {}
 
 variable "pm_api_url" {}
 
+variable "count_vm" {
+    default = 1
+    type = number
+}
+

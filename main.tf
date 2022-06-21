@@ -6,7 +6,7 @@ provider "proxmox" {
 }
 
 resource "proxmox_vm_qemu" "test_server" {
-    count = 1
+    count = var.count_vm
     name = "test-vm-${count.index + 1}"
 
     target_node = var.proxmox_host
